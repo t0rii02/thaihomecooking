@@ -1,0 +1,12 @@
+{
+	"dishes": [
+		{
+			"name": "Khao Pat Gai",
+			"name_english": "Fried Rice With Chicken",
+			"image": "khaopat2.jpg"
+		}
+	],
+	"desserts": [
+
+	]
+}
