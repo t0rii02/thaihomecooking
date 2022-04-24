@@ -56,102 +56,101 @@
 	</div>
 
 	<div class="menu">
+		<div class="buttons">
+			<button id="dishes-btn">Dishes</button>
+			<button id="desserts-btn">Desserts</button>
+		</div>
 		<div class="dishes">
 			<h2 class="dish-header">Dishes</h2>
 			<div class="menu-items">
 				<div class="dish-card dish">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dish">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dish">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dish">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
+				</div>
+				<div class="dish-card dish">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
+				<div class="dish-card dish">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
+				<div class="dish-card dish">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
+				<div class="dish-card dish">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
+				<div class="dish-card dish">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
+				<div class="dish-card dish">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>	
 				</div>
 			</div>
-			<a href="./menu.html" class="button-link">View All Dishes</a>
 		</div>
 		<div class="desserts">
 			<h2 class="dessert-header">Desserts</h2>
 			<div class="menu-items">
-				
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
 				</div>
 				<div class="dish-card dessert">
-					<img src="" alt="">
-					<div class="text">
 						<h3>Dish name</h3>
 						<p>Dish name in English</p>
-					</div>
+				</div>
+				<div class="dish-card dessert">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
+				<div class="dish-card dessert">
+						<h3>Dish name</h3>
+						<p>Dish name in English</p>
+				</div>
 				</div>
 			</div>
-			<a href="./menu.html" class="button-link">View All Desserts</a>
 		</div>
 	</div>
 
@@ -185,5 +184,23 @@
 	<footer class="center-bar">
 		<p>Copyright (c) smom 2004-2022</p>
 	</footer>
+
+	<script>
+		let dishButton = document.getElementById('dishes-btn')
+		let dessertButton = document.getElementById('desserts-btn')
+
+		let dishes = document.querySelector('.dishes')
+		let desserts = document.querySelector('.desserts')
+
+		dishButton.addEventListener('click', function () {
+			dishes.style.display = 'block'
+			desserts.style.display = 'none'
+		})
+
+		dessertButton.addEventListener('click', function () {
+			dishes.style.display = 'none'
+			desserts.style.display = 'block'
+		})
+	</script>
 </body>
 </html>
